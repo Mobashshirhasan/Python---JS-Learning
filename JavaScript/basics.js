@@ -101,11 +101,46 @@
 
 //  Write a function that takes a name and prints "Hello <name>"...
 
+// function greet(name){
+//     a = "hello Mobashshir"
+//     return a;
+// }
+
+// result = greet();
+// console.log(result);
+
+
+// // 1. Function that prints “Hello World!”
+// function hello() {
+//     console.log("Hello World!");
+// }
+
+// hello();
+
+// // ✅ 2. Function that returns the square of a number
+// function square(num) {
+//     return num * num;
+// }
+
+// console.log(square(5));  // 25
+
+
+// function N(sq){
+//     return sq * sq;
+// }
+// // N = sq(5);
+// console.log(N(5));
+
+
+// Function that returns the sum of two numbers
+// function sum(a , b){
+//     return a + b;
+// }
+
+// console.log(sum(2,4));
+
+
 function greet(name){
-    a = "hello Mobashshir"
-    return a;
+    return ("hello " + name);
 }
-
-result = greet();
-console.log(result);
-
+console.log(greet("Mobi"))
