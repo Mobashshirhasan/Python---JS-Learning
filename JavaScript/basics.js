@@ -140,7 +140,36 @@
 // console.log(sum(2,4));
 
 
-function greet(name){
-    return ("hello " + name);
+// function greet(name){
+//     return ("hello " + name);
+// }
+// console.log(greet("Mobi"))
+
+
+// LOOPS : 
+var arr = [1,2,3,4,5,6];
+for(let i =0; i<arr.length; i++){
+    console.log(arr[i]);
+    
 }
-console.log(greet("Mobi"))
+
+arr.forEach(function(element){
+    console.log(element);
+})
+
+arr.forEach(function(element){
+    console.log(element);
+})
+
+
+let myFruits = ["apple", "banana", "pears", "guava"]
+
+myFruits.forEach(function(element){
+    console.log(element);
+    
+})
+
+for (let i = 0; i<myFruits.length; i++){
+    console.log(myFruits[i]);
+    
+}
