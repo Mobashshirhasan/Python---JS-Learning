@@ -206,10 +206,105 @@
 
 
 
-let a = [4,5,9,10,2,4]
-sum = 0;    //0+4+5+9+10+2+4
+// let a = [4,5,9,10,2,4]
+// sum = 0;    //0+4+5+9+10+2+4
 
-for(let i=0; i<a.length; i++){
-    sum = sum + a[i];
+// for(let i=0; i<a.length; i++){
+//     sum = sum + a[i];
+// }
+// console.log(sum);
+
+
+// let numCheck = [1,2,3,4,5]
+
+// numCheck.forEach(function(num){
+//     if(num % 2 == 0){
+//         console.log(num);
+        
+//     }
+// })
+
+
+// let num = [1,2,3,4,5,6,"a","b"]
+// count = 0;
+
+// for(let i=0; i<num.length; i++){
+//     count++;
+// }
+// console.log(count);
+
+
+
+// let i = 0;
+// while(i<= 10){
+//     console.log(i);
+//     i++;
+// }
+
+// let i = 0;
+// while(i<=20){
+//     if(i % 2 == 0){
+//         console.log(i);
+//     }
+//     i++;
+// }
+
+// let arr = ["apple", "banana", "mango"];
+// count = 0;
+
+// while(count<arr.length){
+//     count++;
+// }
+// console.log(count);
+
+
+
+// let num = [1,2,3,4]
+// let count = 0;
+
+// while(count < num.length){
+//     count++;
+// }
+// console.log(count);
+
+
+
+
+// let num = 0;
+// sum = 0;
+
+// while(num<=50){
+//     sum = sum + num;
+//     num++;
+// }
+// console.log(sum);
+
+
+
+// let i = 0;
+// sum = 0;
+
+// while(i <= 50){
+//     sum = sum + i;
+//     i++;
+// }
+// console.log(sum);
+
+
+// let i = 10;
+
+// while(i>=1){
+//     console.log(i);
+//     i--;
+// }
+
+
+
+let arr = [5,6,7,8,9]
+for(let i=0; i<arr.length; i++){
+    if(i == 3){
+        continue;
+    }
+    console.log(arr[i]);
+    
 }
-console.log(sum);
