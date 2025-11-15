@@ -146,30 +146,70 @@
 // console.log(greet("Mobi"))
 
 
-// LOOPS : 
-var arr = [1,2,3,4,5,6];
-for(let i =0; i<arr.length; i++){
-    console.log(arr[i]);
+// // LOOPS : 
+// var arr = [1,2,3,4,5,6];
+// for(let i =0; i<arr.length; i++){
+//     console.log(arr[i]);
     
+// }
+
+// arr.forEach(function(element){
+//     console.log(element);
+// })
+
+// arr.forEach(function(element){
+//     console.log(element);
+// })
+
+
+// let myFruits = ["apple", "banana", "pears", "guava"]
+
+// myFruits.forEach(function(element){
+//     console.log(element);
+    
+// })
+
+// for (let i = 0; i<myFruits.length; i++){
+//     console.log(myFruits[i]);
+    
+// }
+
+
+
+// let fruits = ["apple", "banana", "orange"]
+
+// fruits.forEach(function(items){
+//     console.log(items);
+    
+// })
+
+// for (let i = 0; i<fruits.length; i++){
+//     console.log(fruits[i]);
+    
+// }
+
+// for (let i=0; i<fruits.length; i++){
+//     console.log(fruits[i]);
+    
+// }
+
+
+
+// find the sum of the array using for loop
+// let num = [1,2,3,4,5]
+// sum = 0;    //1,3,6,10,15
+
+// for(let i=0; i<num.length; i++){
+//     sum = sum + num[i];
+// }
+// console.log(sum);
+
+
+
+let a = [4,5,9,10,2,4]
+sum = 0;    //0+4+5+9+10+2+4
+
+for(let i=0; i<a.length; i++){
+    sum = sum + a[i];
 }
-
-arr.forEach(function(element){
-    console.log(element);
-})
-
-arr.forEach(function(element){
-    console.log(element);
-})
-
-
-let myFruits = ["apple", "banana", "pears", "guava"]
-
-myFruits.forEach(function(element){
-    console.log(element);
-    
-})
-
-for (let i = 0; i<myFruits.length; i++){
-    console.log(myFruits[i]);
-    
-}
+console.log(sum);
