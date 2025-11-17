@@ -148,8 +148,19 @@
             if (localStorage.getItem("itemJson") != null){
                 itemJsonArray = JSON.parse(localStorage.getItem("itemJson"))
             }
-        }
 
+        let str = "";
+        itemJsonArray.forEach((element, index) => {
+          str += `
+        <tr>
+          <th scope="row">${index + 1}</th>
+          <td>${element[0]}</td>
+          <td>${element[1]}</td>
+          <td><button class="btn btn-danger btn-sm" onclick="deleteItem(${index})">Delete</button></td>
+        </tr>`;
+        });
+        tableBody.innerHTML = str;
+      }
 
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
