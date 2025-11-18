@@ -117,7 +117,7 @@
 
 // hello();
 
-// // ✅ 2. Function that returns the square of a number
+// // 2. Function that returns the square of a number
 // function square(num) {
 //     return num * num;
 // }
@@ -302,7 +302,7 @@
 
 let arr = [5,6,7,8,9]
 for(let i=0; i<arr.length; i++){
-    if(i == 3){
+    if(i == 2){
         continue;
     }
     console.log(arr[i]);
