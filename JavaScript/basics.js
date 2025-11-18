@@ -300,11 +300,16 @@
 
 
 
-let arr = [5,6,7,8,9]
-for(let i=0; i<arr.length; i++){
-    if(i == 2){
-        continue;
-    }
-    console.log(arr[i]);
+// let arr = [5,6,7,8,9]
+// for(let i=0; i<arr.length; i++){
+//     if(i == 2){
+//         continue;
+//     }
+//     console.log(arr[i]);
     
-}
+// }
+
+
+
+
+let num = 0;
