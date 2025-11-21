@@ -12,3 +12,4 @@ accountEmail = "mustafa@microsoft.com"
 accountPassword = "New Password"
 accountCity = "New Delhi"
 
+console.table({ accountId, accountEmail, accountPassword, accountCity, accountState });
