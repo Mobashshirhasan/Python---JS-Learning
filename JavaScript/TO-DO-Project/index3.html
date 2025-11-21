@@ -3,77 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO APP</title>
+    <title>To-do list</title>
 </head>
 <body>
-
-    <h2>Simple TODO App (Pure JavaScript)</h2>
-
-    <!-- Input Field -->
-    <input id="todoInput" type="text" placeholder="Enter task">
-    <button id="addBtn">Add Task</button>
-
-    <!-- List Container -->
-    <ul id="todoList"></ul>
-
-    <script>
-        // =============== SELECT ELEMENTS ===============
-
-        const input = document.getElementById("todoInput");  
-        const addBtn = document.getElementById("addBtn");  
-        const list = document.getElementById("todoList");  
-
-        // ===============  CREATE  ===============
-        addBtn.addEventListener("click", function () {
-            const task = input.value.trim();  
-
-            if (task === "") {
-                alert("Please enter a task!");
-                return;
-            }
-
-            createTask(task);  
-            input.value = "";  
-        });
-
-        function createTask(taskName) {
-            // Create a list item
-            const li = document.createElement("li");
-
-            // Create task text
-            const span = document.createElement("span");
-            span.innerText = taskName;
-
-            // Create edit button
-            const editBtn = document.createElement("button");
-            editBtn.innerText = "Edit";
-
-            // Create delete button
-            const deleteBtn = document.createElement("button");
-            deleteBtn.innerText = "Delete";
-
-            // Add event for EDIT
-            editBtn.addEventListener("click", function () {
-                const newTask = prompt("Edit your task:", span.innerText);
-                if (newTask !== null && newTask.trim() !== "") {
-                    span.innerText = newTask;
-                }
-            });
-
-            // Add event for DELETE
-            deleteBtn.addEventListener("click", function () {
-                list.removeChild(li);
-            });
-
-            // Append items to li
-            li.appendChild(span);
-            li.appendChild(editBtn);
-            li.appendChild(deleteBtn);
-
-            // Add li to the list
-            list.appendChild(li);
-        }
-    </script>
-
+    <button>click me</button>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure incidunt consequatur a laboriosam illo recusandae cum tempora? Nihil saepe vitae ipsam voluptatem libero perferendis</p>
 </body>
+<script>
+    let arr = [1,2,3,4,5,6,7]
+    if(arr % 2 == 0){
+        return even;
+    }
+    else{
+        return odd;
+    }
+</script>
 </html>
