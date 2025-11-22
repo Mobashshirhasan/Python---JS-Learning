@@ -1,86 +1,102 @@
-/* 
-    Primitive data types:- String, Number, Boolean, null, undefined, Symbol, BigInt
-*/
+// /* 
+//     Primitive data types:- String, Number, Boolean, null, undefined, Symbol, BigInt
+// */
 
-// const score = 100
-// const scoreValue = 100.3
-// const isLoggedIn = false
-// const outsideTemp = null
+// // const score = 100
+// // const scoreValue = 100.3
+// // const isLoggedIn = false
+// // const outsideTemp = null
 
-// let userEmail;
-// console.log(typeof userEmail);      // undefined
-
-
-const id = Symbol('123')
-const anotherId = Symbol('123')
-
-// console.log(id === anotherId);    
-/*
-    it will give false, because the value might be same , but the reference is different and symbol always contains unique values
-*/
+// // let userEmail;
+// // console.log(typeof userEmail);      // undefined
 
 
-/*
-    Reference (Non Primitive) data types:- Array, Objects, Functions
-*/
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 
-// const colours = ["black", "blue", "green", "red"]  // it's an array of colours
-
-// let myObj = {
-//     name: "Kamran",
-//     age: 24,
-// }
-
-// console.log(myObj);
+// // console.log(id === anotherId);    
+// /*
+//     it will give false, because the value might be same , but the reference is different and symbol always contains unique values
+// */
 
 
-// const myFunction = function(){
-//     console.log("Hello World");
+// /*
+//     Reference (Non Primitive) data types:- Array, Objects, Functions
+// */
+
+// // const colours = ["black", "blue", "green", "red"]  // it's an array of colours
+
+// // let myObj = {
+// //     name: "Kamran",
+// //     age: 24,
+// // }
+
+// // console.log(myObj);
+
+
+// // const myFunction = function(){
+// //     console.log("Hello World");
+    
+// // }
+
+// let myFunc = function(){
+//     console.log("Revision of JS");
     
 // }
+// // console.log(myFunc);        // It will give reference of the function
+// // myFunc();               // It will actually call the function;
 
-let myFunc = function(){
-    console.log("Revision of JS");
-    
-}
-// console.log(myFunc);        // It will give reference of the function
-// myFunc();               // It will actually call the function;
-
-// console.log(typeof colours);        // object
-// console.log(typeof myObj);          // object
-// console.log(typeof myFunction);     // function
+// // console.log(typeof colours);        // object
+// // console.log(typeof myObj);          // object
+// // console.log(typeof myFunction);     // function
 
 
-//********************************************** Memory ********************************************//
+// //********************************************** Memory ********************************************//
 
-/*
-    Primitive data type uses Stack memory and Non primitive data type uses heap memory.
-    In stack memory, an instance of a variable is used or given to another variable.
-    But, in heap memory the direct reference to the object is given
-*/
-
-
-// let myYoutubeName = "MustafaKamran"
-
-// let anotherName = myYoutubeName
-
-// anotherName = "Coding"
-
-// console.log(myYoutubeName);
-// console.log(anotherName);
+// /*
+//     Primitive data type uses Stack memory and Non primitive data type uses heap memory.
+//     In stack memory, an instance of a variable is used or given to another variable.
+//     But, in heap memory the direct reference to the object is given
+// */
 
 
-let user1 = {
-    name: "Mustafa",
-    email: "mustafa@google.com"
-}
+// // let myYoutubeName = "MustafaKamran"
 
-let user2 = user1
+// // let anotherName = myYoutubeName
 
-user2.email = "kamran@microsoft.com"
-/*
-    It will change the value in both the object
-*/
+// // anotherName = "Coding"
 
-console.log(user1.email);
-console.log(user2.email);
+// // console.log(myYoutubeName);
+// // console.log(anotherName);
+
+
+// let user1 = {
+//     name: "Mustafa",
+//     email: "mustafa@google.com"
+// }
+
+// let user2 = user1
+
+// user2.email = "kamran@microsoft.com"
+// /*
+//     It will change the value in both the object
+// */
+
+// console.log(user1.email);
+// console.log(user2.email);
+
+
+// const num = "cf123ahs45";
+// console.log(Number(num));
+// console.log(parseInt(num));
+
+
+const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7,[-1, -5, [-6, -10]]]]
+// const realAnotherArray = anotherArray.flat(2)
+// console.log(realAnotherArray);
+
+const myarr = ("hello")
+console.log(Array.from(myarr));
+console.log(Array.of(myarr));
+// console.log(Array.from(1,2,3,4,5));
+
