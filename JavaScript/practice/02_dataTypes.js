@@ -1,4 +1,4 @@
-// /* 
+// /*
 //     Primitive data types:- String, Number, Boolean, null, undefined, Symbol, BigInt
 // */
 
@@ -10,15 +10,13 @@
 // // let userEmail;
 // // console.log(typeof userEmail);      // undefined
 
-
 // const id = Symbol('123')
 // const anotherId = Symbol('123')
 
-// // console.log(id === anotherId);    
+// // console.log(id === anotherId);
 // /*
 //     it will give false, because the value might be same , but the reference is different and symbol always contains unique values
 // */
-
 
 // /*
 //     Reference (Non Primitive) data types:- Array, Objects, Functions
@@ -33,15 +31,14 @@
 
 // // console.log(myObj);
 
-
 // // const myFunction = function(){
 // //     console.log("Hello World");
-    
+
 // // }
 
 // let myFunc = function(){
 //     console.log("Revision of JS");
-    
+
 // }
 // // console.log(myFunc);        // It will give reference of the function
 // // myFunc();               // It will actually call the function;
@@ -49,7 +46,6 @@
 // // console.log(typeof colours);        // object
 // // console.log(typeof myObj);          // object
 // // console.log(typeof myFunction);     // function
-
 
 // //********************************************** Memory ********************************************//
 
@@ -59,7 +55,6 @@
 //     But, in heap memory the direct reference to the object is given
 // */
 
-
 // // let myYoutubeName = "MustafaKamran"
 
 // // let anotherName = myYoutubeName
@@ -68,7 +63,6 @@
 
 // // console.log(myYoutubeName);
 // // console.log(anotherName);
-
 
 // let user1 = {
 //     name: "Mustafa",
@@ -85,11 +79,9 @@
 // console.log(user1.email);
 // console.log(user2.email);
 
-
 // const num = "cf123ahs45";
 // console.log(Number(num));
 // console.log(parseInt(num));
-
 
 // const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7,[-1, -5, [-6, -10]]]]
 // const realAnotherArray = anotherArray.flat(2)
@@ -100,20 +92,16 @@
 // console.log(Array.of(myarr));
 // console.log(Array.from(1,2,3,4,5));
 
-
-
 // const name = function(){
-    
+
 //     console.log(name());
 // }
-
 
 // function sum (a,b){
 //     return a + b
 // }
 
 // console.log(sum(2,3))
-
 
 // let myfunction = (a, b) => a + b;
 
@@ -126,15 +114,38 @@
 // const add = sum(4,6);
 // console.log(add);
 
+// function check(num1) {
+//   if (num1 % 2 == 0) {
+//     return `${num1} num is even`;
+//   } else {
+//     return `${num1} num is odd`;
+//   }
+// }
+// const add = check(5);
+// console.log(add);
 
-function check (num1 , num2) {
-    if(num1 % 2 == 0){
-        return `${num1}num is even`
-    }
-    else{
-        return `${num2}num is odd`
-    }
-}
-const add = check(5,3);
-console.log(add);
+
+// function tab (a, b){
+//     return a * b
+// }
+// const table = tab(2,3);
+// console.log(table);
+
+
+// let num = 2;
+
+// for(let i = 1; i<=10; i++){
+//     console.log(`${num} * ${i} = ${num * i}` );
+    
+// }
+
+// let num1 = 3;
+// let num2 = 10;
+// function tab (num1,num2){
+//     for(let i = 1; i<= num2; i++){
+//         console.log(`${num1} * ${i} = ${num1 * i}`);
+//     }
+// }
+// tab(num1,num2);
+
 
