@@ -91,12 +91,50 @@
 // console.log(parseInt(num));
 
 
-const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7,[-1, -5, [-6, -10]]]]
+// const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7,[-1, -5, [-6, -10]]]]
 // const realAnotherArray = anotherArray.flat(2)
 // console.log(realAnotherArray);
 
-const myarr = ("hello")
-console.log(Array.from(myarr));
-console.log(Array.of(myarr));
+// const myarr = ("hello")
+// console.log(Array.from(myarr));
+// console.log(Array.of(myarr));
 // console.log(Array.from(1,2,3,4,5));
+
+
+
+// const name = function(){
+    
+//     console.log(name());
+// }
+
+
+// function sum (a,b){
+//     return a + b
+// }
+
+// console.log(sum(2,3))
+
+
+// let myfunction = (a, b) => a + b;
+
+// function sum (num1 , num2) {
+//     // console.log(num1 + num2);
+//     return num1 + num2
+
+// }
+// // console.log(sum(2 ,3));
+// const add = sum(4,6);
+// console.log(add);
+
+
+function check (num1 , num2) {
+    if(num1 % 2 == 0){
+        return `${num1}num is even`
+    }
+    else{
+        return `${num2}num is odd`
+    }
+}
+const add = check(5,3);
+console.log(add);
 
