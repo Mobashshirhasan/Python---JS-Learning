@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO APP</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>TODO APP</h2>
 
-    <input type="text" id="text" placeholder="Enter your Task !">
+    <input type="text" id="todoInput" placeholder="Enter your Task !" />
     <button onclick="addTask()">Add Task</button>
+    <!-- Table to show todos -->
+    <table id="todoTable" border="1" cellpadding="6">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Task</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="todoBody">
+        <!-- Rows will be added dynamically -->
+      </tbody>
+    </table>
 
     <script>
-        
+      let todos = [];
+      let id = 1;
+
+      function addTask() {
+        const input = document.getElementById("todoInput").values;
+        if (input.trim() === "") {
+          alert("Please Enter a Task");
+          return;
+        }
+
+        todos.push({ id: id++, task: input });
+
+        document.getElementById("todoInput").values = "";
+
+        renderTable();
+      }
     </script>
-</body>
+  </body>
 </html>
