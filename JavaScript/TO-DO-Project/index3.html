@@ -9,15 +9,27 @@
   <script>
 
 
-    const button = document.createElement('button');
-    button.id = 'btn';
+    // const button = document.createElement('button');
+    // button.id = 'btn';
 
-    document.body.appendChild(button);
-    button.innerText = "click me"
+    // document.body.appendChild(button);
+    // button.innerText = "click me"
 
-    button.addEventListener('click' ,(e) =>{
-        alert("Button Clicked!!!!");
-    });
+    // button.addEventListener('click' ,(e) =>{
+    //     alert("Button Clicked!!!!");
+    // });
 
+
+    myarr = [1, 2, 3, 4, 5]
+    // for(let i =0; i< myarr.length; i++){
+    //   console.log(myarr[i] * 2);
+      
+    // }
+
+    myarr.forEach( (ele) => console.log(`Ele: ${ele * 2}`))   
+
+    // myarr.forEach( function(ele) {
+    //   console.log(ele * 2)
+    // } )
   </script>
 </html>
