@@ -17,9 +17,15 @@ transaction = [
     }
 ]
 
-
-const tran = transaction.reduce( (acc , currVal) => {
+const debitAmnt = transaction.filter( (e) => e.type == "debit")
+                        .reduce( (acc , currVal) => {
     return acc + currVal.amount
 },0)
 
-console.log(tran);
+const creditAmnt = transaction.filter( (e) => e.type == "credit")
+                        .reduce( (acc , currVal) => {
+    return acc + currVal.amount
+},0)
+
+console.log(`debitAmnt : ${debitAmnt}`);
+console.log(`creditAmnt : ${creditAmnt}`);
