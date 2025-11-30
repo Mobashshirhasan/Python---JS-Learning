@@ -8,7 +8,7 @@
   <body></body>
   <h2>Generate a Random color from an Array...</h2>
   <script>
-    myArr = ["blue", "red", "green"];
+    myArr = ["blue", "red", "green", "orange", "black", "pink"];
 
     // setInterval(() => {
     //   for (let i = 0; i < myArr.length; i++) {
@@ -18,10 +18,14 @@
     // }, 2000);
 
     let i = 0;
-  
     setInterval( () => {
         document.body.style.backgroundColor = myArr[i]
         i++
-    }, 2000)
+        console.log(i);
+        if (i==myArr.length){
+            i = 0;
+        }
+        
+    },2000)
   </script>
 </html>
