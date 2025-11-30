@@ -41,10 +41,7 @@ shoppingItems = [
     }
 ]
 
-const newShop = shoppingItems.filter( (e) => e.price >= 5000)
-                .map( (e) => e.price / 2)
+const newAmount = shoppingItems.filter( (e) => e.price >= 5000)
+                    .map( (e) => e.price / 2)
 
-console.log(newShop);
-// result = newShop % 2;
-// console.log(result);
-
+console.log(`Updated Amount : ${newAmount}`);
