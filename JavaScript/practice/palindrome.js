@@ -9,9 +9,11 @@
     Output: false
 */
 
-function pal(str){
+function palindrome(str){
     let reverse = str.split("").reverse().join("")
-    return reverse === str
+    return str === reverse;
 }
-console.log(pal("madam"));
-console.log(pal("abc"));
+console.log(palindrome("madam"));
+console.log(palindrome("hello"));
+console.log(palindrome("tiger"));
+console.log(palindrome("121"));
