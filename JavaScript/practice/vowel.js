@@ -3,7 +3,7 @@
 let str = "my name is";
 
 for(let i=0; i < str.length; i++){
-    console.log(str);
+    console.log(str[i]);
     
 }
 // console.log(str[5]);
