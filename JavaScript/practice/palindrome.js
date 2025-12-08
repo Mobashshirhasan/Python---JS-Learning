@@ -17,3 +17,4 @@ console.log(palindrome("madam"));
 console.log(palindrome("hello"));
 console.log(palindrome("tiger"));
 console.log(palindrome("121"));
+console.log(palindrome("555"));
