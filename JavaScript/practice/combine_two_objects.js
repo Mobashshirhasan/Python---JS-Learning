@@ -10,7 +10,7 @@ Example:
 // { a: 1, b: 3, c: 4 }
 */
 
-let myObj1 = { a: 1, b: 2 }
+let myObj1 = { a: 1, b: 3 }
 let myObj2 = { b: 3, c: 4 }
 
 let myArr1 = Object.entries(myObj1)
